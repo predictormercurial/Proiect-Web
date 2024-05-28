@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $query->bind_param('sssii', $name, $mail, $password, $is_admin, $id);
         $query->execute();
     }
-    // Delete a user
+    // Delete an user
     if (isset($_POST['delete'])) {
         $id = $_POST['id'];
         $query = $db->prepare("DELETE FROM user_table WHERE id = ?");

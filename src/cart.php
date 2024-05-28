@@ -28,18 +28,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
-    <!--<script>
-        var storedCart = JSON.parse(localStorage.getItem("cart")) || [];
-        for (var i = 0; i < storedCart.length; i++) {
-            var product = storedCart[i];
-            var productName = product.name;
-            var productPrice = product.price;
-            var form = document.createElement("form");
-            form.method = "post";
-            form.innerHTML = `<input type="hidden" name="product" value="${productName}"><button class="btn btn-danger" name="remove">Remove</button>`;
-            document.getElementById("cart-items").appendChild(form);
-        }
-    </script>-->
 </head>
 <body>
     <!-- Navigation -->

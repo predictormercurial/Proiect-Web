@@ -49,10 +49,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
             $password = "toor";
             $dbname = "user_info";
 
-            // Create connection
             $conn = new mysqli($servername, $username, $password, $dbname);
 
-            // Check connection
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
             }
